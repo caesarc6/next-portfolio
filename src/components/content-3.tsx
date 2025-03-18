@@ -53,7 +53,9 @@ export default function ProjectsSection() {
       >
         {/* <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12"> */}
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-          <AppWindowMacIcon className="size-12 text-primary  justify-self-center" />
+          <div className="flex justify-center">
+            <AppWindowMacIcon className="size-12 text-primary justify-self-center" />
+          </div>
           <h2 className="text-4xl font-medium text-center">
             My Featured Projects
           </h2>

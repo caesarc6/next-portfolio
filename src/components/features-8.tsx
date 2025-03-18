@@ -5,7 +5,7 @@ import { Separator } from "./ui/separator";
 export default function SkillsSection() {
   return (
     <span id="skills">
-      <Separator className="mt-70 mb-27" />
+      <Separator className="mt-20 mb-10" />
 
       <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent  mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
         <div className="mx-auto max-w-5xl px-0.1">
