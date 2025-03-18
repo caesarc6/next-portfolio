@@ -1,4 +1,9 @@
-import { Code } from "lucide-react"; // Assuming this is the icon used
+import {
+  AppWindowMacIcon,
+  CodeXml,
+  SquareTerminal,
+  MonitorCog,
+} from "lucide-react"; // Assuming this is the icon used
 import { Card, CardContent } from "@/components/ui/card"; // Adjust import based on your setup
 import { Separator } from "./ui/separator";
 
@@ -16,7 +21,7 @@ export default function SkillsSection() {
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
                 <div className="flex justify-center mb-4">
-                  <Code className="size-12 text-primary" />
+                  <CodeXml className="size-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
                   Programming Languages
@@ -38,13 +43,13 @@ export default function SkillsSection() {
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
                 <div className="flex justify-center mb-4">
-                  <Code className="size-12 text-primary" />
+                  <MonitorCog className="size-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
                   Frameworks & Libraries
                 </h3>
                 <div className="text-foreground mb-4">
-                  <p className="text-sm">React (w/ Hooks, Context)</p>
+                  <p className="text-sm">React</p>
                   <p className="text-sm">Node.js & Express.js</p>
                   <p className="text-sm">Tailwind CSS</p>
                   <p className="text-sm">Shadcn UI</p>
@@ -60,7 +65,7 @@ export default function SkillsSection() {
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
                 <div className="flex justify-center mb-4">
-                  <Code className="size-12 text-primary" />
+                  <SquareTerminal className="size-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">
                   Tools & Databases
@@ -68,7 +73,7 @@ export default function SkillsSection() {
                 <div className="text-foreground mb-4">
                   <p className="text-sm">PostgreSQL</p>
                   <p className="text-sm">MongoDB</p>
-                  <p className="text-sm">Vercel (Deployment)</p>
+                  <p className="text-sm">Vercel</p>
                   <p className="text-sm">Git & GitHub</p>
                   <p className="text-sm">Firebase & Supabase</p>
                 </div>

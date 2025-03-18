@@ -7,7 +7,7 @@ import etherealGainsImg from "../app/assets/1etherealgains.png";
 import readEasyImg from "../app/assets/readeasy.jpg";
 import commonCentsImg from "../app/assets/commoncents.png";
 import { Separator } from "@/components/ui/separator";
-
+import { AppWindowMacIcon } from "lucide-react"; // Assuming this is the icon used
 export default function ProjectsSection() {
   const projects = [
     {
