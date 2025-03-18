@@ -6,7 +6,7 @@ export default function SkillsSection() {
   return (
     <span id="skills">
       <Separator className="mt-70 mb-27" />
-      <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent">
+      <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent sm:mx-8">
         <div className="mx-auto max-w-5xl px-0.1">
           <h2 className="text-3xl font-bold text-center mb-20">
             Technical Skills & Expertise
