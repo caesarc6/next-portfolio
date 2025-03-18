@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
 import { Code } from "lucide-react"; // Assuming this is the icon used
-import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card"; // Adjust import based on your setup
 import { Separator } from "./ui/separator";
 
