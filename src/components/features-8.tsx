@@ -1,9 +1,4 @@
-import {
-  AppWindowMacIcon,
-  CodeXml,
-  SquareTerminal,
-  MonitorCog,
-} from "lucide-react"; // Assuming this is the icon used
+import { CodeXml, SquareTerminal, MonitorCog } from "lucide-react"; // Assuming this is the icon used
 import { Card, CardContent } from "@/components/ui/card"; // Adjust import based on your setup
 import { Separator } from "./ui/separator";
 
@@ -11,12 +6,13 @@ export default function SkillsSection() {
   return (
     <span id="skills">
       <Separator className="mt-70 mb-27" />
-      <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent sm:mx-8">
+
+      <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent  mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
         <div className="mx-auto max-w-5xl px-0.1">
           <h2 className="text-3xl font-bold text-center mb-20">
             Technical Skills & Expertise
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3">
             {/* Programming Languages Card */}
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
