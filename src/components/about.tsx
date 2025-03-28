@@ -14,7 +14,9 @@ export default function About() {
     <div>
       <section className="py-16 md:py-32 mt-10" id="about">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 text-transparent bg-clip-text">
+            About Me
+          </h2>
           <div className="mt-12 md:mt-24">
             <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
               {/* Highlight Cards */}
@@ -46,14 +48,14 @@ export default function About() {
               <div className="lg:col-span-2 lg:mt-0 sm:col-span-1 mt-6">
                 <div className="space-y-4">
                   <h3 className="text-5xl font-semibold">Hey, I’m Caesar!</h3>
-                  <p className="text-foreground text-4xl">
+                  <p className="text-foreground text-3xl">
                     I’m a software engineer with a passion for turning ideas
                     into code. I graduated from John Jay College with a B.S. in
                     Computer Science and Information Security, minoring in
                     Psychology, which fuels my curiosity about how technology
                     and human behavior intersect.
                   </p>
-                  <p className="text-muted-foreground text-xl">
+                  <p className="text-muted-foreground text-md">
                     With experience as an IT Specialist at the Department of
                     Education and a freelance developer, I’ve tackled everything
                     from configuring tech for 90+ classrooms to building custom

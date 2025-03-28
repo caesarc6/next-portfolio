@@ -13,9 +13,11 @@ export default function ProjectsSection() {
     {
       title: "Read Easy",
       description:
-        "An AI-powered assistant from the Federal AI Hackathon (2nd Place & People’s Choice). Simplifies USDA.gov content using Python and OpenAI.",
+        "An AI-powered assistant simplifies USDA.gov content using Python and OpenAI. ",
+      description2: "Federal AI Hackathon (2nd Place & People’s Choice).",
       image: readEasyImg,
-      liveLink: null, // No live link provided, using GitHub only
+      liveLink:
+        "https://www.gsa.gov/blog/2024/08/01/gsa-aithemed-hackathon-reimagines-user-experience-for-federal-websites", // No live link provided, using GitHub only
       githubLink: "https://github.com/caesarc6/Read-Easy-Hackathon-Submission",
     },
     {
@@ -46,7 +48,7 @@ export default function ProjectsSection() {
 
   return (
     <>
-      <Separator className="mt-21 mb-52" />
+      <Separator className="mt-21 mb-32" />
       <section
         // className="py-16 md:py-32 mp-12 flex flex-wrap items-end justify-between gap-6 border-t "
         id="projects"
@@ -56,7 +58,7 @@ export default function ProjectsSection() {
           <div className="flex justify-center">
             <AppWindowMacIcon className="size-12 text-primary justify-self-center" />
           </div>
-          <h2 className="text-4xl font-medium text-center">
+          <h2 className="text-4xl font-medium text-center bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500  text-transparent bg-clip-text">
             My Featured Projects
           </h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">
@@ -93,12 +95,9 @@ export default function ProjectsSection() {
                   />
                 )}
                 <div className="p-4 space-y-2">
-                  <h3 className="text-2xl font-semibold text-stone-300">
+                  <h3 className="text-2xl font-semibold  bg-gradient-to-br from-gray-300 via-slate-500 to-gray-300  text-transparent bg-clip-text">
                     {project.title}
-                  </h3>
-                  <p className="text-xl text-stone-400">
-                    {project.description}
-                  </p>
+                  </h3>{" "}
                   <div className="flex gap-2">
                     {project.liveLink && (
                       <Button
@@ -117,6 +116,15 @@ export default function ProjectsSection() {
                       <Link href={project.githubLink}>GitHub</Link>
                     </Button>
                   </div>
+                  <span className="text-lg text-slate-400">
+                    {project.description2}
+                  </span>
+                  <span className="text-xl text-stone-400">
+                    {project.description}
+                  </span>
+                  {/* <span className="text-lg text-slate-400">
+                    {project.description2}
+                  </span> */}
                 </div>
               </div>
             ))}

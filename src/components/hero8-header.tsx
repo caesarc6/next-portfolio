@@ -10,7 +10,7 @@ const menuItems = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Achievements", href: "#achievements" },
-  { name: "Contact", href: "#contact" },
+  // { name: "Contact", href: "#contact" },
 ];
 
 export const HeroHeader = () => {
@@ -30,7 +30,7 @@ export const HeroHeader = () => {
                 className="flex items-center space-x-2 "
               >
                 <Logo />
-                <span className="invert text-lg font-semibold">
+                <span className="invert text-lg font-semibold lg:hidden sm:inline-block text-zinc-900 dark:text-zinc-100">
                   Caesar Cuzco
                 </span>
               </Link>
@@ -77,15 +77,15 @@ export const HeroHeader = () => {
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button asChild variant="outline" size="sm">
-                  <Link href="/path-to-your-resume.pdf" download>
-                    <span>Download Resume</span>
+                  <Link href="https://drive.google.com/file/d/15VPhObr5mHdfhR3uH-UclsgRkQiCWBLM/view?usp=drive_link">
+                    <span>View Resume</span>
                   </Link>
                 </Button>
-                <Button asChild size="sm">
+                {/* <Button asChild size="sm">
                   <Link href="mailto:caesarcd6@gmail.com">
                     <span>Get in Touch</span>
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
