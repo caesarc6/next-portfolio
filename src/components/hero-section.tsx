@@ -52,7 +52,7 @@ export default function Portfolio() {
                   variant="ghost"
                   className="px-5 text-base"
                 >
-                  <Link href="#contact">Contact Me</Link>
+                  {/* <Link href="#contact">Contact Me</Link> */}
                 </Button>
               </div>
             </div>
