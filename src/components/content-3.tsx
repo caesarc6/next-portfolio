@@ -7,7 +7,7 @@ import etherealGainsImg from "../app/assets/1etherealgains.png";
 import readEasyImg from "../app/assets/readeasy.jpg";
 import commonCentsImg from "../app/assets/commoncents.png";
 import { Separator } from "@/components/ui/separator";
-import { AppWindowMacIcon } from "lucide-react"; // Assuming this is the icon used
+import { AppWindowMacIcon, Newspaper, Github, BadgeCheck } from "lucide-react"; // Assuming this is the icon used
 export default function ProjectsSection() {
   const projects = [
     {
@@ -16,8 +16,9 @@ export default function ProjectsSection() {
         "An AI-powered assistant simplifies USDA.gov content using Python and OpenAI. ",
       description2: "Federal AI Hackathon (2nd Place & People’s Choice).",
       image: readEasyImg,
-      liveLink:
+      articleLink:
         "https://www.gsa.gov/blog/2024/08/01/gsa-aithemed-hackathon-reimagines-user-experience-for-federal-websites", // No live link provided, using GitHub only
+      articleTitle: "U.S. General Services Administration Article",
       githubLink: "https://github.com/caesarc6/Read-Easy-Hackathon-Submission",
     },
     {
@@ -26,6 +27,7 @@ export default function ProjectsSection() {
         "A fitness app for tracking workouts. Users sign up, log posts, and monitor progress with a full-stack solution.",
       image: etherealGainsImg,
       liveLink: "https://www.etherealgains.com/",
+      linkTitle: "Ethereal Gains",
       githubLink: "https://github.com/caesarc6/gym-entry-mern",
     },
     {
@@ -94,26 +96,47 @@ export default function ProjectsSection() {
                     style={{ borderRadius: "6px" }}
                   />
                 )}
-                <div className="p-4 space-y-2">
+                <div className="p-4 space-y-2 ">
                   <h3 className="text-2xl font-semibold  bg-gradient-to-br from-gray-300 via-slate-500 to-gray-300  text-transparent bg-clip-text">
                     {project.title}
                   </h3>{" "}
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {project.liveLink && (
                       <Button
                         asChild
                         variant="link"
-                        className="p-0 text-cyan-800 text-md"
+                        className="!p-0 text-cyan-800 text-md "
                       >
-                        <Link href={project.liveLink}>Live Site</Link>
+                        <Link href={project.liveLink}>
+                          <BadgeCheck className="size-5 text-slate-400 self-center" />
+                          {project.linkTitle || "Live Server"}
+                        </Link>
                       </Button>
                     )}
+                    {project.articleLink && (
+                      <>
+                        <Button
+                          asChild
+                          variant="link"
+                          className="!p-0 text-cyan-800 text-md "
+                        >
+                          <Link href={project.articleLink}>
+                            <Newspaper className="size-5 text-slate-400 self-center" />
+                            {project.articleTitle || "Article"}
+                          </Link>
+                        </Button>
+                      </>
+                    )}
+
                     <Button
                       asChild
                       variant="link"
-                      className="p-0 text-cyan-800 text-md"
+                      className="!p-0 text-cyan-800 text-md"
                     >
-                      <Link href={project.githubLink}>GitHub</Link>
+                      <Link href={project.githubLink}>
+                        <Github className="size-5 text-slate-400 self-center " />
+                        Github
+                      </Link>
                     </Button>
                   </div>
                   <span className="text-lg text-slate-400">
