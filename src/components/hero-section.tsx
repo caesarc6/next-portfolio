@@ -14,7 +14,7 @@ export default function Portfolio() {
         {/* Hero Section */}
 
         <section
-          className="relative min-h-screen flex items-center justify-center pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44"
+          className="relative min-h-screen flex items-center justify-center pb-24 md:pb-32 lg:pb-56 lg:pt-44 pt-30"
           id="home"
         >
           <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
