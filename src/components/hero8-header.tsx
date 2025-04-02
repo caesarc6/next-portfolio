@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Logo } from "./logo"; // Assuming this is your personal logo or brand
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import { useState } from "react";
 
 const menuItems = [
   { name: "Home", href: "#home" },
@@ -14,7 +14,11 @@ const menuItems = [
 ];
 
 export const HeroHeader = () => {
-  const [menuState, setMenuState] = React.useState(false);
+  const [menuState, setMenuState] = useState(false);
+
+  // Function to close the menu
+  const closeMenu = () => setMenuState(false);
+
   return (
     <header>
       <nav
@@ -28,6 +32,7 @@ export const HeroHeader = () => {
                 href="/"
                 aria-label="home"
                 className="flex items-center space-x-2"
+                onClick={closeMenu}
               >
                 <Logo />
                 <span className="text-lg font-semibold text-zinc-900 invert sm:inline-block lg:hidden dark:text-zinc-100">
@@ -68,6 +73,7 @@ export const HeroHeader = () => {
                       <Link
                         href={item.href}
                         className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                        onClick={closeMenu}
                       >
                         <span>{item.name}</span>
                       </Link>
@@ -77,7 +83,10 @@ export const HeroHeader = () => {
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button asChild variant="outline" size="sm">
-                  <Link href="https://drive.google.com/file/d/15VPhObr5mHdfhR3uH-UclsgRkQiCWBLM/view?usp=drive_link">
+                  <Link
+                    href="https://drive.google.com/file/d/15VPhObr5mHdfhR3uH-UclsgRkQiCWBLM/view?usp=drive_link"
+                    onClick={closeMenu}
+                  >
                     <span>View Resume</span>
                   </Link>
                 </Button>
