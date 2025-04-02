@@ -87,7 +87,7 @@ export default function SkillsSection() {
           </div>
         </div>
       </section>
-      <Separator className="mt-40 mb-10" />
+      <Separator className="mt-20 mb-22" />
     </span>
   );
 }
