@@ -12,9 +12,9 @@ export default function About() {
   ];
   return (
     <div>
-      <section className="py-16 md:py-32 mt-10" id="about">
+      <section className="mt-10 py-16 md:py-32" id="about">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 text-transparent bg-clip-text">
+          <h2 className="mb-12 bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text text-center text-3xl font-bold text-transparent">
             About Me
           </h2>
           <div className="mt-12 md:mt-24">
@@ -23,13 +23,13 @@ export default function About() {
               {highlights.map((highlight, index) => (
                 <div key={index} className="group overflow-hidden">
                   <Image
-                    className="h-103 w-full rounded-md object-cover object-top grayscale brightness-83 transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
+                    className="h-103 w-full rounded-md object-cover object-top brightness-83 grayscale transition-all duration-500 group-hover:h-[22.5rem] group-hover:rounded-xl hover:grayscale-0"
                     src={ProfileImage}
                     alt={`${highlight.title} illustration`}
                     width={826}
                     height={1239}
                   />
-                  <div className="px-2 pt-2 sm:pb-0 sm:pt-4">
+                  <div className="px-2 pt-2 sm:pt-4 sm:pb-0">
                     <div className="flex justify-between">
                       <h3 className="text-title inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                         {highlight.title}
@@ -45,7 +45,7 @@ export default function About() {
               ))}
 
               {/* Side Description for lg screens */}
-              <div className="lg:col-span-2 lg:mt-0 sm:col-span-1 mt-6">
+              <div className="mt-6 sm:col-span-1 lg:col-span-2 lg:mt-0">
                 <div className="space-y-4">
                   <h3 className="text-5xl font-semibold">Hey, I’m Caesar!</h3>
                   <p className="text-foreground text-3xl">

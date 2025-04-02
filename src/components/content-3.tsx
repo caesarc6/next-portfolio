@@ -58,12 +58,12 @@ export default function ProjectsSection() {
         {/* <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12"> */}
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <div className="flex justify-center">
-            <AppWindowMacIcon className="size-12 text-primary justify-self-center" />
+            <AppWindowMacIcon className="text-primary size-12 justify-self-center" />
           </div>
-          <h2 className="text-4xl font-medium text-center bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500  text-transparent bg-clip-text">
+          <h2 className="bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text text-center text-4xl font-medium text-transparent">
             My Featured Projects
           </h2>
-          <p className="text-center text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground mx-auto max-w-2xl text-center">
             Here’s a glimpse of my work—full-stack apps, AI solutions, and
             more—built with creativity and code.
           </p>
@@ -73,11 +73,11 @@ export default function ProjectsSection() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group overflow-hidden rounded-sm border shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="group overflow-hidden rounded-sm border shadow-md transition-shadow duration-300 hover:shadow-lg"
               >
                 {project.image ? (
                   <Image
-                    className="h-52 w-full object-cover grayscale brightness-100 transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100"
+                    className="h-52 w-full object-cover brightness-100 grayscale transition-all duration-500 group-hover:brightness-100 group-hover:grayscale-0"
                     src={project.image}
                     alt={`${project.title} screenshot`}
                     height={192}
@@ -87,7 +87,7 @@ export default function ProjectsSection() {
                   />
                 ) : (
                   <Image
-                    className="rounded-lg d h-52 w-full object-cover grayscale brightness-100 transition-all duration-500 group-hover:grayscale-0 group-hover:brightness-100"
+                    className="d h-52 w-full rounded-lg object-cover brightness-100 grayscale transition-all duration-500 group-hover:brightness-100 group-hover:grayscale-0"
                     src=""
                     alt={`${project.title} screenshot`}
                     height={192}
@@ -96,8 +96,8 @@ export default function ProjectsSection() {
                     style={{ borderRadius: "6px" }}
                   />
                 )}
-                <div className="p-4 space-y-2 ">
-                  <h3 className="text-2xl font-semibold  bg-gradient-to-br from-gray-300 via-slate-500 to-gray-300  text-transparent bg-clip-text">
+                <div className="space-y-2 p-4">
+                  <h3 className="bg-gradient-to-br from-gray-300 via-slate-500 to-gray-300 bg-clip-text text-2xl font-semibold text-transparent">
                     {project.title}
                   </h3>{" "}
                   <div className="flex flex-wrap gap-2">
@@ -105,10 +105,10 @@ export default function ProjectsSection() {
                       <Button
                         asChild
                         variant="link"
-                        className="!p-0 text-cyan-800 text-md "
+                        className="text-md !p-0 text-cyan-800"
                       >
                         <Link href={project.liveLink}>
-                          <BadgeCheck className="size-5 text-slate-400 self-center" />
+                          <BadgeCheck className="size-5 self-center text-slate-400" />
                           {project.linkTitle || "Live Server"}
                         </Link>
                       </Button>
@@ -118,10 +118,10 @@ export default function ProjectsSection() {
                         <Button
                           asChild
                           variant="link"
-                          className="!p-0 text-cyan-800 text-md "
+                          className="text-md max-w-full !p-0 break-words whitespace-normal text-cyan-800"
                         >
                           <Link href={project.articleLink}>
-                            <Newspaper className="size-5 text-slate-400 self-center" />
+                            <Newspaper className="size-5 self-center text-slate-400" />
                             {project.articleTitle || "Article"}
                           </Link>
                         </Button>
@@ -131,10 +131,10 @@ export default function ProjectsSection() {
                     <Button
                       asChild
                       variant="link"
-                      className="!p-0 text-cyan-800 text-md"
+                      className="text-md !p-0 text-cyan-800"
                     >
                       <Link href={project.githubLink}>
-                        <Github className="size-5 text-slate-400 self-center " />
+                        <Github className="size-5 self-center text-slate-400" />
                         Github
                       </Link>
                     </Button>

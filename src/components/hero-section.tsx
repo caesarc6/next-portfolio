@@ -14,13 +14,13 @@ export default function Portfolio() {
         {/* Hero Section */}
 
         <section
-          className="relative min-h-screen flex items-center justify-center pb-24 md:pb-32 lg:pb-56 lg:pt-44 pt-30"
+          className="relative flex min-h-screen items-center justify-center pt-30 pb-24 md:pb-32 lg:pt-44 lg:pb-56"
           id="home"
         >
           <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
-            <div className="max-w-lg mx-auto">
+            <div className="mx-auto max-w-lg">
               {/* <h1 className="mt-8 text-5xl font-light text-balance md:text-6xl lg:mt-16 xl:text-7xl text-zinc-300 "> */}
-              <h1 className="text-5xl font-light text-balance md:text-6xl lg:mt-16 xl:text-7xl bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 inline-block text-transparent bg-clip-text p-2">
+              <h1 className="inline-block bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text p-2 text-4xl font-light text-balance text-transparent md:text-6xl lg:mt-16 lg:text-6xl xl:text-7xl">
                 <TypeAnimation
                   sequence={[
                     "Caesar Cuzco",
@@ -38,7 +38,7 @@ export default function Portfolio() {
                   style={{ fontSize: "1.6em", display: "inline-block" }}
                 />
               </h1>
-              <p className="mt-8 max-w-2xl text-pretty text-3xl mx-auto">
+              <p className="mx-auto mt-8 max-w-2xl text-lg text-pretty md:text-2xl lg:text-4xl">
                 Building innovative web solutions with modern technologies and
                 clean code.
               </p>
@@ -58,7 +58,7 @@ export default function Portfolio() {
             </div>
           </div>
           <Image
-            className="absolute inset-0 h-full w-full object-cover z-0  brightness-26 grayscale-100"
+            className="absolute inset-0 z-0 h-full w-full object-cover brightness-26 grayscale-100"
             src={hero}
             alt="Hero Background"
             height={4000}

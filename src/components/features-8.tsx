@@ -7,24 +7,24 @@ export default function SkillsSection() {
     <span id="skills">
       <Separator className="mt-20 mb-6" />
 
-      <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent  mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-        <div className="mx-auto max-w-5xl px-0.1">
-          <h2 className="text-3xl font-bold text-center mb-10 bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500  text-transparent bg-clip-text">
+      <section className="mx-auto max-w-5xl space-y-8 bg-gray-50 px-6 py-16 md:space-y-16 md:py-32 dark:bg-transparent">
+        <div className="px-0.1 mx-auto max-w-5xl">
+          <h2 className="mb-10 bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text text-center text-3xl font-bold text-transparent">
             Technical Skills & Expertise
           </h2>
-          <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-15">
+          <p className="text-muted-foreground mx-auto mb-15 max-w-2xl text-center">
             Leveraging a versatile tech stack to build and ship innovative
             software solutions that are robust, efficient, and user-focused.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
             {/* Programming Languages Card */}
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <CodeXml className="size-12 text-primary" />
+                <div className="mb-4 flex justify-center">
+                  <CodeXml className="text-primary size-12" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="mb-2 text-xl font-semibold">
                   Programming Languages
                 </h3>
                 <div className="text-foreground mb-4">
@@ -43,10 +43,10 @@ export default function SkillsSection() {
             {/* Frameworks & Libraries Card */}
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <MonitorCog className="size-12 text-primary" />
+                <div className="mb-4 flex justify-center">
+                  <MonitorCog className="text-primary size-12" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="mb-2 text-xl font-semibold">
                   Frameworks & Libraries
                 </h3>
                 <div className="text-foreground mb-4">
@@ -66,10 +66,10 @@ export default function SkillsSection() {
             {/* Tools & Databases Card */}
             <Card className="relative overflow-hidden">
               <CardContent className="p-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <SquareTerminal className="size-12 text-primary" />
+                <div className="mb-4 flex justify-center">
+                  <SquareTerminal className="text-primary size-12" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="mb-2 text-xl font-semibold">
                   Tools & Databases
                 </h3>
                 <div className="text-foreground mb-4">
