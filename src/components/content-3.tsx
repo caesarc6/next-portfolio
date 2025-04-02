@@ -118,7 +118,7 @@ export default function ProjectsSection() {
                         <Button
                           asChild
                           variant="link"
-                          className="text-md max-w-full !p-0 break-words whitespace-normal text-cyan-800"
+                          className="text-md max-w-full !p-0 break-words !whitespace-normal text-cyan-800"
                         >
                           <Link href={project.articleLink}>
                             <Newspaper className="size-5 self-center text-slate-400" />
