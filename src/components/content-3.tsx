@@ -13,8 +13,9 @@ export default function ProjectsSection() {
     {
       title: "Read Easy",
       description:
-        "An AI-powered assistant simplifies USDA.gov content using Python and OpenAI. ",
+        "An AI-powered assistant that simplifies USDA.gov content using Python and OpenAI. Targeted at helping users with low literacy skills navigate the website and find the information they need.",
       description2: "Federal AI Hackathon (2nd Place & People’s Choice).",
+      description3: "",
       image: readEasyImg,
       articleLink:
         "https://www.gsa.gov/blog/2024/08/01/gsa-aithemed-hackathon-reimagines-user-experience-for-federal-websites", // No live link provided, using GitHub only
@@ -24,7 +25,7 @@ export default function ProjectsSection() {
     {
       title: "Ethereal Gains",
       description:
-        "A fitness app for tracking workouts. Users sign up, log posts, and monitor progress with a full-stack solution.",
+        "A fitness app for tracking workouts. Users can log workouts, view posts, and monitor their progress with a user-friendly interface.",
       image: etherealGainsImg,
       liveLink: "https://www.etherealgains.com/",
       linkTitle: "Ethereal Gains",
@@ -33,7 +34,7 @@ export default function ProjectsSection() {
     {
       title: "iSocially",
       description:
-        "A modern social network where users create accounts, post text and images, follow others, and engage with likes and comments—Twitter-inspired.",
+        "A social network where users create accounts, post text and images, follow others, and engage with likes and comments.",
       image: iSociallyImg,
       liveLink: "https://isocially.vercel.app/",
       githubLink: "https://github.com/caesarc6/socialapp",
@@ -41,7 +42,7 @@ export default function ProjectsSection() {
     {
       title: "CommonCents",
       description:
-        "An accessibility app using AI and computer vision to detect U.S. currency, built with React and Python.",
+        "An accessibility app using AI and computer vision to detect U.S. currency. Targeted towards helping users with vision impairments identify and count U.S. currency. Built with React and Python.",
       image: commonCentsImg,
       liveLink: null, // No live link provided, using GitHub only
       githubLink: "https://github.com/caesarc6/dollar-classifier",
@@ -61,11 +62,10 @@ export default function ProjectsSection() {
             <AppWindowMacIcon className="text-primary size-12 justify-self-center" />
           </div>
           <h2 className="bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text text-center text-4xl font-medium text-transparent">
-            My Featured Projects
+            Projects
           </h2>
           <p className="text-muted-foreground mx-auto max-w-2xl text-center">
-            Here’s a glimpse of my work—full-stack apps, AI solutions, and
-            more—built with creativity and code.
+            Here’s a glimpse of some of the full-stack apps I have built.
           </p>
 
           {/* <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3"> */}

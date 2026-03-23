@@ -47,32 +47,28 @@ export default function About() {
               {/* Side Description for lg screens */}
               <div className="mt-6 sm:col-span-1 lg:col-span-2 lg:mt-0">
                 <div className="space-y-4">
-                  <h3 className="text-5xl font-semibold">Hello World</h3>
+                  <h3 className="text-5xl font-semibold">
+                    &lt;Hello World/&gt;
+                  </h3>
                   <p className="text-foreground text-3xl">
-                    I’m a software engineer and John Jay College graduate who
-                    enjoys building full-stack applications that turn ideas into
-                    real products.
+                    I’m a software engineer who enjoys building full-stack
+                    applications that turn ideas into real products.
                   </p>
                   <p className="text-muted-foreground text-md">
-                    Previously, I worked as an IT Specialist with the Department
-                    of Education supporting technology across 90+ classrooms,
-                    and I now build web applications as a freelance developer.I
-                    also placed 2nd in the Federal AI Hackathon and won the
-                    People’s Choice Award for an AI-powered assistant built at
-                    the GSA offices in One World Trade Center.
+                    I have experience working as an IT Specialist where I
+                    assessed and identified technology needs and troubleshooted
+                    hardware and software issues in collaboration with the
+                    Department of Education Help Center. Currently, I develop
+                    web applications as a freelance web developer. I bring in
+                    experience in cybersecurity and software engineering to
+                    create secure and efficient web applications.
                   </p>
                   <p className="text-muted-foreground text-md">
-                    Lately, I’ve been focused on building modern full-stack
-                    applications using React, Node.js, and cloud tools while
-                    continuing to explore how AI can enhance user experiences.
+                    In my free time, I enjoy playing basketball, working out,
+                    and spending time with my family. Recently, I've been
+                    enjoying reading. I'm currently reading "Shoe Dog" by Phil
+                    Knight.
                   </p>
-
-                  <Link
-                    href="#projects"
-                    className="text-primary-600 dark:text-primary-400 inline-block text-sm hover:underline"
-                  >
-                    Explore My Work →
-                  </Link>
                 </div>
               </div>
             </div>

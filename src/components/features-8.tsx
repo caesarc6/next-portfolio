@@ -10,7 +10,7 @@ export default function SkillsSection() {
       <section className="mx-auto max-w-5xl space-y-8 bg-gray-50 px-6 py-16 md:space-y-16 md:py-32 dark:bg-transparent">
         <div className="px-0.1 mx-auto max-w-5xl">
           <h2 className="mb-10 bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text text-center text-3xl font-bold text-transparent">
-            Technical Skills & Expertise
+            Technical Skills
           </h2>
           <p className="text-muted-foreground mx-auto mb-15 max-w-2xl text-center">
             Leveraging a versatile tech stack to build and ship innovative
