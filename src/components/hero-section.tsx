@@ -5,6 +5,7 @@ import Image from "next/image";
 import { HeroHeader } from "@/components/hero8-header";
 import { TypeAnimation } from "react-type-animation";
 import hero from "../app/assets/logo.webp";
+import profilePhoto from "../app/assets/me.jpg";
 
 export default function Portfolio() {
   return (
@@ -14,57 +15,69 @@ export default function Portfolio() {
         {/* Hero Section */}
 
         <section
-          className="relative flex min-h-screen items-center justify-center pt-30 pb-24 md:pb-32 lg:pt-44 lg:pb-56"
+          className="relative flex h-screen min-h-screen items-start justify-center overflow-hidden pt-30 pb-24 md:pb-32 lg:pt-44 lg:pb-56"
           id="home"
         >
-          <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
-            <div className="mx-auto max-w-lg">
-              {/* <h1 className="mt-8 text-5xl font-light text-balance md:text-6xl lg:mt-16 xl:text-7xl text-zinc-300 "> */}
-              <h1 className="inline-block bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text p-2 text-4xl font-light text-balance text-transparent md:text-6xl lg:mt-16 lg:text-6xl xl:text-7xl">
-                <TypeAnimation
-                  sequence={[
-                    "Caesar Cuzco",
-                    203,
-                    "Caesar Cuzco,",
-                    203,
-                    "Caesar Cuzco, Fullstack Developer",
-                    5000,
-                    "Caesar Cuzco, Software Engineer",
-                    6900,
-                  ]}
-                  wrapper="span"
-                  speed={40}
-                  deletionSpeed={70}
-                  style={{ fontSize: "1.6em", display: "inline-block" }}
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-6 text-center">
+            <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-8">
+              <div
+                className="relative size-42 shrink-0 overflow-hidden rounded-full bg-zinc-800 shadow-xl ring-2 ring-zinc-400/25 md:size-52 lg:size-58"
+                style={{
+                  backgroundImage: `url(${profilePhoto.src})`,
+                  backgroundSize: "175%",
+                  backgroundPosition: "31% 54%",
+                }}
+              >
+                <img
+                  src={profilePhoto.src}
+                  alt="Caesar Cuzco"
+                  className="sr-only"
                 />
-              </h1>
-              <p className="mx-auto mt-8 max-w-2xl text-lg text-pretty md:text-2xl lg:text-4xl">
+              </div>
+              <div className="min-w-0 flex-1">
+                <h1 className="block bg-gradient-to-br from-gray-100 via-gray-100 to-gray-500 bg-clip-text p-2 text-4xl font-light text-balance whitespace-pre-line text-transparent md:text-6xl lg:text-6xl xl:text-7xl">
+                  <TypeAnimation
+                    sequence={[
+                      "Caesar Cuzco",
+                      120,
+                      "Caesar Cuzco\nSoftware Engineer",
+                    ]}
+                    wrapper="span"
+                    speed={40}
+                    deletionSpeed={70}
+                    style={{ fontSize: "1.2em", display: "block" }}
+                  />
+                </h1>
+                {/* <p className="mx-auto mt-8 max-w-2xl text-lg text-pretty md:text-2xl lg:text-4xl">
                 Building innovative web solutions with modern technologies and
                 clean code.
-              </p>
-              <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row">
-                <Button asChild size="lg" className="px-5 text-base">
-                  <Link href="#projects">View Projects</Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="ghost"
-                  className="px-5 text-base"
-                >
-                  {/* <Link href="#contact">Contact Me</Link> */}
-                </Button>
+              </p> */}
+                <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row">
+                  <Button asChild size="lg" className="px-5 text-base">
+                    <Link href="#projects">View Projects</Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="ghost"
+                    className="px-5 text-base"
+                  >
+                    {/* <Link href="#contact">Contact Me</Link> */}
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
-          <Image
-            className="absolute inset-0 z-0 h-full w-full object-cover brightness-26 grayscale-100"
-            src={hero}
-            alt="Hero Background"
-            height={4000}
-            width={3000}
-            priority // Loads image faster for hero section
-          />
+          <div className="pointer-events-none absolute inset-0 z-0">
+            <Image
+              className="object-cover brightness-26 grayscale-100"
+              src={hero}
+              alt="Hero Background"
+              fill
+              sizes="100vw"
+              priority // Loads image faster for hero section
+            />
+          </div>
         </section>
 
         {/* <section className="pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44" id="home">

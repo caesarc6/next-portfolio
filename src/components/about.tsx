@@ -47,22 +47,24 @@ export default function About() {
               {/* Side Description for lg screens */}
               <div className="mt-6 sm:col-span-1 lg:col-span-2 lg:mt-0">
                 <div className="space-y-4">
-                  <h3 className="text-5xl font-semibold">Hey, I’m Caesar!</h3>
+                  <h3 className="text-5xl font-semibold">Hello World</h3>
                   <p className="text-foreground text-3xl">
-                    I’m a software engineer with a passion for turning ideas
-                    into code. I graduated from John Jay College with a B.S. in
-                    Computer Science and Information Security, minoring in
-                    Psychology, which fuels my curiosity about how technology
-                    and human behavior intersect.
+                    I’m a software engineer and John Jay College graduate who
+                    enjoys building full-stack applications that turn ideas into
+                    real products.
                   </p>
                   <p className="text-muted-foreground text-md">
-                    With experience as an IT Specialist at the Department of
-                    Education and a freelance developer, I’ve tackled everything
-                    from configuring tech for 90+ classrooms to building custom
-                    web solutions. My proudest moments? Placing 2nd in the
-                    Federal AI Hackathon and earning the People’s Choice Award
-                    for an AI-powered assistant at the GSA Offices at One World
-                    Trade Center.
+                    Previously, I worked as an IT Specialist with the Department
+                    of Education supporting technology across 90+ classrooms,
+                    and I now build web applications as a freelance developer.I
+                    also placed 2nd in the Federal AI Hackathon and won the
+                    People’s Choice Award for an AI-powered assistant built at
+                    the GSA offices in One World Trade Center.
+                  </p>
+                  <p className="text-muted-foreground text-md">
+                    Lately, I’ve been focused on building modern full-stack
+                    applications using React, Node.js, and cloud tools while
+                    continuing to explore how AI can enhance user experiences.
                   </p>
 
                   <Link

@@ -82,9 +82,9 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button asChild variant="outline" size="sm">
+                <Button asChild variant="secondary" size="sm">
                   <Link
-                    href="https://drive.google.com/file/d/15VPhObr5mHdfhR3uH-UclsgRkQiCWBLM/view?usp=drive_link"
+                    href="https://docs.google.com/document/d/1aBIt0EFqvBWKIcaZTzTGIGWtVOABvSLs/edit?usp=sharing&ouid=107718499357792964114&rtpof=true&sd=true"
                     onClick={closeMenu}
                   >
                     <span>View Resume</span>
