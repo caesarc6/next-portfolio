@@ -24,6 +24,9 @@
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp"]
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
