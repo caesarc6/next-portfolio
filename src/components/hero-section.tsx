@@ -28,10 +28,12 @@ export default function Portfolio() {
                   backgroundPosition: "31% 54%",
                 }}
               >
-                <img
-                  src={profilePhoto.src}
+                <Image
+                  src={profilePhoto}
                   alt="Caesar Cuzco"
                   className="sr-only"
+                  fill
+                  sizes="168px"
                 />
               </div>
               <div className="min-w-0 flex-1">

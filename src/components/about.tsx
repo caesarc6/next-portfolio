@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ProfileImage from "../app/assets/ProfileImage.jpg";
-import Link from "next/link";
 
 export default function About() {
   const highlights = [
@@ -65,8 +64,8 @@ export default function About() {
                   </p>
                   <p className="text-muted-foreground text-md">
                     In my free time, I enjoy playing basketball, working out,
-                    and spending time with my family. Recently, I've been
-                    enjoying reading. I'm currently reading "Shoe Dog" by Phil
+                    and spending time with my family.                     Recently, I&apos;ve been
+                    enjoying reading. I&apos;m currently reading &ldquo;Shoe Dog&rdquo; by Phil
                     Knight.
                   </p>
                 </div>
